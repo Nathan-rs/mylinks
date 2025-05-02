@@ -21,15 +21,16 @@ li {
 
 html {
     font-size: 16px;
+    background-color: #212121;
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.5;
     font-weight: 400;
-    /* min-height: 100vh; */
     background-color: var(--bg-color-dark);
     color: var(--text-color-light);
+    height: 100%;
 }
 
 h1 {
