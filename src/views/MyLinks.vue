@@ -29,11 +29,18 @@ import LinkShare from '@/components/LinkShare.vue';
 .content {
     display: flex;
     flex-direction: column;
-    width: 680px;
+    width: 580px;
     min-height: 100vh;
-    border: 1px solid #000;
-    padding: 1rem;
-    gap: 1rem;
+    /* border: 1px solid #000; */
+    /* padding: 1rem; */
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    /* gap: 1rem; */
+}
+
+.contentLinks {
+    display: block;
+    padding-top: 2rem;
 }
 
 @media (max-width: 468px) {

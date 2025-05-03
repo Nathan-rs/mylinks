@@ -93,7 +93,7 @@ const links = [
 </script>
 
 <template>
-    <div class="link-share">
+    <div class="linkShate">
         <ul class="listLinks">
             <li v-for="link in links" :key="link.id" class="itemLink">
                 <div class="contentLink">
@@ -156,17 +156,17 @@ li {
     color: #eee;
 }
 
+.linkShate {
+
+}
+
 .listLinks {
     display: flex;
     flex-direction: column;
+    width: 100%;
     gap: 1rem;
-}
-
-.itemLink {
-}
-
-.contentLink {
-    /* display: flex; */
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .linkClick {
@@ -177,7 +177,7 @@ li {
     padding: 1rem;
     text-align: center;
     background-color: #213448;
-    border-radius: 8px;
+    border-radius: 48px;
 }
 
 .label {
