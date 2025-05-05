@@ -29,8 +29,8 @@ import LinkShare from '../components/LinkShare.vue';
     /* flex-direction: column; */
     width: 580px;
     min-height: 100vh;
-    /* padding-top: .5rem; */
-    /* padding-bottom: .5rem; */
+    padding-top: .5rem;
+    padding-bottom: .5rem;
     /* border: 1px solid blue; */
     /* position: relative; */
     /* min-height: 100vh; */
