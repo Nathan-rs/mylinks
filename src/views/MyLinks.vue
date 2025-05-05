@@ -1,17 +1,16 @@
 <script setup>
-import HeaderContent from '@/components/HeaderContent.vue';
-import LinkShare from '@/components/LinkShare.vue';
+import HeaderContent from '@/components/HeaderContent.vue'
+import LinkShare from '../components/LinkShare.vue';
 </script>
 
 <template>
     <div class="container">
         <div class="content">
-            <header class="header">
-                <HeaderContent />
-            </header>
-
             <main class="contentLinks">
-                <LinkShare />
+                <div class="contentLinksComponents">
+                    <HeaderContent />
+                    <!-- <LinkShare /> -->
+                </div>
             </main>
         </div>
     </div>
@@ -23,24 +22,25 @@ import LinkShare from '@/components/LinkShare.vue';
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    width: 100%;
 }
 
 .content {
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
+    /* flex-direction: column; */
     width: 580px;
     min-height: 100vh;
-    /* border: 1px solid #000; */
-    /* padding: 1rem; */
-    padding-top: .5rem;
-    padding-bottom: .5rem;
-    /* gap: 1rem; */
+    /* padding-top: .5rem; */
+    /* padding-bottom: .5rem; */
+    /* border: 1px solid blue; */
+    /* position: relative; */
+    /* min-height: 100vh; */
 }
 
 .contentLinks {
-    display: block;
-    padding-top: 2rem;
+    /* display: flex; */
+    /* width: 580px; */
+    /* position: absolute; */
+    /* margin-top: 4rem; */
 }
 
 @media (max-width: 468px) {

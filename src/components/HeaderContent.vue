@@ -1,12 +1,13 @@
 <script setup>
-import ProfilePhoto from '@/components/ProfilePhoto.vue'
-import DescriptionProfile from '@/components/DescriptionProfile.vue'
-import backgroundProfile from '@/assets/images/profile.jpg'
 import imageProfile from '@/assets/images/profile.jpg'
+import backgroundProfile from '@/assets/images/profile.jpg'
+import LinkShare from '@/components/LinkShare.vue'
 
 const data = {
     name: 'Nathan Ramus',
     description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. ' +
+        'Earum eligendi quasi inventore ipsa dolor repudiandae, nesciunt eius ducimus ipsum recusandae pariatur distinctio explicabo? ' +
+        'Odio non error sint beatae qui expedita? Lorem, ijpsum dolor sit amet consectetur adipisicing elit. ' +
         'Earum eligendi quasi inventore ipsa dolor repudiandae, nesciunt eius ducimus ipsum recusandae pariatur distinctio explicabo? ' +
         'Odio non error sint beatae qui expedita?',
     imageBackgroundProfile: `${backgroundProfile}`,
@@ -18,37 +19,51 @@ console.log(data)
 </script>
 
 <template>
-
     <div class="headerContainer">
         <div class="backgroundImageProfile">
             <img :src="`${data.imageBackgroundProfile}`" alt="">
         </div>
+        <div class="t1">
+            <div class="informationProfile">
+                <div class="imageProfile">
+                    <img :src="`${data.imageProfile}`" alt="">
+                </div>
 
-        <div class="informationProfile">
-            <div class="imageProfile">
-                <img :src="`${data.imageProfile}`" alt="">
+                <div class="nameProfile">
+                    <p class="title">{{ data.name }}</p>
+                </div>
+
+                <div class="apresentationProfile">
+                    <p class="text">{{ data.description }}</p>
+                </div>
+
+                <div class="linksSocial">
+
+                </div>
             </div>
 
-            <div class="nameProfile">
-                <p class="title">{{ data.name }}</p>
-            </div>
-
-            <div class="apresentationProfile">
-                <p class="text">{{ data.description }}</p>
-            </div>
-
-            <div class="linksSocial">
-
+            <div class="t2">
+                <LinkShare />
             </div>
         </div>
-
     </div>
-
 </template>
 
 <style scoped>
 .headerContainer {
+    display: flex;
+    min-height: 100%;
+    flex-direction: column;
     position: relative;
+}
+
+.t1 {
+    z-index: 50;
+}
+
+.t2 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .title {
@@ -66,6 +81,26 @@ console.log(data)
     text-align: center;
 }
 
+.backgroundImageProfile {
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+}
+
+.backgroundImageProfile img {
+    height: 100%;
+    width: 100%;
+    max-height: 320px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    opacity: .8;
+    object-fit: cover;
+
+    /* efeito fade-out */
+    -webkit-mask-image: linear-gradient(to bottom, #303030 80%, transparent 100%);
+    mask-image: linear-gradient(to bottom, #303030 70%, transparent 100%);
+}
+
 .imageProfile img {
     width: 6rem;
     height: 6rem;
@@ -81,24 +116,9 @@ console.log(data)
     gap: .2rem;
     padding-left: 1rem;
     padding-right: 1rem;
-    /* border: 1px solid #fff; */
-    position: absolute;
-    bottom: 0;
-}
-
-.backgroundImageProfile img {
-    display: block;
-    max-width: 100%;
-    width: 100%;
-    max-height: 320px;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    opacity: .8;
-    object-fit: cover;
-
-    /* efeito fade-out */
-    -webkit-mask-image: linear-gradient(to bottom, #303030 80%, transparent 100%);
-    mask-image: linear-gradient(to bottom, #303030 70%, transparent 100%);
+    margin-top: 4rem;
+    /* coloca a div na frente da div com a imagem */
+    z-index: 50; 
 }
 
 .apresentationProfile {

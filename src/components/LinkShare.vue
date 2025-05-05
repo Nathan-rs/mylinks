@@ -93,7 +93,7 @@ const links = [
 </script>
 
 <template>
-    <div class="linkShate">
+    <div class="linkShare">
         <ul class="listLinks">
             <li v-for="link in links" :key="link.id" class="itemLink">
                 <div class="contentLink">
@@ -111,41 +111,6 @@ const links = [
 </template>
 
 <style scoped>
-/* .link-share {
-    height: 100%;
-    margin-top: 1rem;
-}
-
-.list-links {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-.item-link {
-    flex: 1;
-}
-
-.link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    color: #eee;
-    font-size: 1.2rem;
-    background-color: #213448;
-    font-weight: bold;
-    padding: .625rem;
-    cursor: pointer;
-    border-radius: 10px;
-    transition: background-color 0.3s ease;
-
-}
-
-.link:hover {
-    background-color: #2b3c5a;
-} */
-
 a,
 ul,
 li {
@@ -154,10 +119,6 @@ li {
     padding: 0;
     margin: 0;
     color: #eee;
-}
-
-.linkShate {
-
 }
 
 .listLinks {
@@ -169,10 +130,14 @@ li {
     padding-right: 1rem;
 }
 
+.linkShare {
+    width: 100%;
+    /* border: 1px solid #eee; */
+}
+
 .linkClick {
     display: flex;
     align-items: center;
-    /* justify-content: center; */
     gap: 1rem;
     padding: 1rem;
     text-align: center;
