@@ -6,7 +6,7 @@ import LinkShare from '@/components/LinkShare.vue'
 
 const data = {
     name: 'Natã Ramos | dev',
-    description: 'Desenvolvedor FullStack',
+    description: 'Bacharel em Ciência da Computação | Desenvolvedor FullStack',
     imageBackgroundProfile: `${backgroundProfile}`,
     imageProfile: `${imageProfile}`
 }
@@ -70,7 +70,7 @@ const data = {
 
 .text {
     color: #eee;
-    font-size: .75rem;
+    font-size: .85rem;
     line-height: 150%;
     font-weight: 400;
     text-align: center;
