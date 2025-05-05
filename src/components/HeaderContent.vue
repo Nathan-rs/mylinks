@@ -1,20 +1,15 @@
 <script setup>
 import imageProfile from '@/assets/images/profile.jpg'
+// import backgroundProfile from '@/assets/images/Capa_Linkedin.png'
 import backgroundProfile from '@/assets/images/profile.jpg'
 import LinkShare from '@/components/LinkShare.vue'
 
 const data = {
-    name: 'Nathan Ramus',
-    description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. ' +
-        'Earum eligendi quasi inventore ipsa dolor repudiandae, nesciunt eius ducimus ipsum recusandae pariatur distinctio explicabo? ' +
-        'Odio non error sint beatae qui expedita? Lorem, ijpsum dolor sit amet consectetur adipisicing elit. ' +
-        'Earum eligendi quasi inventore ipsa dolor repudiandae, nesciunt eius ducimus ipsum recusandae pariatur distinctio explicabo? ' +
-        'Odio non error sint beatae qui expedita?',
+    name: 'Natã Ramos | dev',
+    description: 'Desenvolvedor FullStack',
     imageBackgroundProfile: `${backgroundProfile}`,
     imageProfile: `${imageProfile}`
 }
-
-console.log(data)
 
 </script>
 
@@ -125,10 +120,15 @@ console.log(data)
     width: 90%;
 }
 
-@media (max-width: 468px) {
+@media (max-width: 600px) {
     .imageProfile img {
-        width: 8rem;
-        height: 8rem;
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .informationProfile {
+        margin-top: 7rem;
     }
 }
+
 </style>

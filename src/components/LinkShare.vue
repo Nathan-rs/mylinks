@@ -33,61 +33,6 @@ const links = [
         url: 'link://link.com.br/twitter',
         iconClass: 'pi pi-twitter'
     },
-    // {
-    //     id: 6,
-    //     name: 'Twitch',
-    //     url: 'link://link.com.br/twitch'
-    // },
-    // {
-    //     id: 7,
-    //     name: 'Discord',
-    //     url: 'link://link.com.br/discord'
-    // },
-    // {
-    //     id: 8,
-    //     name: 'Telegram',
-    //     url: 'link://link.com.br/telegram'
-    // },
-    // {
-    //     id: 9,
-    //     name: 'WhatsApp',
-    //     url: 'link://link.com.br/whatsapp'
-    // },
-    // {
-    //     id: 10,
-    //     name: 'Email',
-    //     url: 'link://link.com.br/email'
-    // },
-    // {
-    //     id: 11,
-    //     name: 'Youtube',
-    //     url: 'link://link.com.br/youtube'
-    // },
-    // {
-    //     id: 12,
-    //     name: 'TikTok',
-    //     url: 'link://link.com.br/tiktok'
-    // },
-    // {
-    //     id: 13,
-    //     name: 'Snapchat',
-    //     url: 'link://link.com.br/snapchat'
-    // },
-    // {
-    //     id: 14,
-    //     name: 'Pinterest',
-    //     url: 'link://link.com.br/pinterest'
-    // },
-    // {
-    //     id: 15,
-    //     name: 'Reddit',
-    //     url: 'link://link.com.br/reddit'
-    // },
-    // {
-    //     id: 16,
-    //     name: 'Tumblr',
-    //     url: 'link://link.com'
-    // }
 ]
 
 </script>
@@ -132,7 +77,6 @@ li {
 
 .linkShare {
     width: 100%;
-    /* border: 1px solid #eee; */
 }
 
 .linkClick {
@@ -141,7 +85,7 @@ li {
     gap: 1rem;
     padding: 1rem;
     text-align: center;
-    background-color: #213448;
+    background-color: #474E93;
     border-radius: 48px;
 }
 

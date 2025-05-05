@@ -1,6 +1,5 @@
 <script setup>
 import HeaderContent from '@/components/HeaderContent.vue'
-import LinkShare from '../components/LinkShare.vue';
 </script>
 
 <template>
@@ -9,7 +8,6 @@ import LinkShare from '../components/LinkShare.vue';
             <main class="contentLinks">
                 <div class="contentLinksComponents">
                     <HeaderContent />
-                    <!-- <LinkShare /> -->
                 </div>
             </main>
         </div>
@@ -20,7 +18,7 @@ import LinkShare from '../components/LinkShare.vue';
 .container {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
 }
 
@@ -43,10 +41,13 @@ import LinkShare from '../components/LinkShare.vue';
     /* margin-top: 4rem; */
 }
 
-@media (max-width: 468px) {
+@media (max-width: 600px) {
     .content {
         width: 100%;
         padding: 0;
+        margin: 0;
     }
 }
+
+
 </style>
