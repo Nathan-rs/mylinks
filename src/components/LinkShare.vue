@@ -1,38 +1,45 @@
 <script setup>
 
+import logo from '@/assets/icons/logo.svg'
+
 import 'primeicons/primeicons.css'
 
 const links = [
     {
+        id: 0,
+        name: 'Portfolio',
+        url: 'https://nathan-rs.github.io/portfolio/',
+        iconSVG: logo,
+        iconClass: ''
+    },
+    {
         id: 1,
         name: 'Github',
-        url: 'link://link.com.br/github',
+        url: 'https://github.com/Nathan-rs',
+        iconSVG: '',
         iconClass: 'pi pi-github'
     },
     {
         id: 2,
         name: 'Linkedin',
-        url: 'link://link.com.br/linkedin',
+        url: 'https://www.linkedin.com/in/nataramos/',
+        iconSVG: '',
         iconClass: 'pi pi-linkedin'
     },
     {
         id: 3,
         name: 'Instagram',
-        url: 'link://link.com.br/instagram',
+        url: 'https://www.instagram.com/natthan_rs/',
+        iconSVG: '',
         iconClass: 'pi pi-instagram'
     },
     {
         id: 4,
-        name: 'Facebook',
-        url: 'link://link.com.br/facebook',
-        iconClass: 'pi pi-facebook'
-    },
-    {
-        id: 5,
-        name: 'Twitter',
-        url: 'link://link.com.br/twitter',
-        iconClass: 'pi pi-twitter'
-    },
+        name: 'Threads',
+        url: 'https://www.threads.com/@natthan_rs',
+        iconSVG: '',
+        iconClass: 'pi pi-hashtag'
+    }
 ]
 
 </script>
@@ -44,7 +51,8 @@ const links = [
                 <div class="contentLink">
                     <a class="linkClick" :href="link.url" target="_blank" rel="noopener noreferrer">
                         <div class="icon">
-                            <i :class="`${link.iconClass}`"></i>
+                            <img v-if="link.iconSVG" :src="link.iconSVG" width="16" height="16" alt="icon" />
+                            <i v-else :class="`${link.iconClass}`"></i>
                         </div>
 
                         <div class="label">{{ link.name }}</div>
